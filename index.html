@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+body {
+  background-color: #f7e9ea;
+}
+
+.button1 {
+  background-color: #ff1493;
+  color: #ffffff;
+  width: 90px;
+  height: 40px;
+}
+
+.button2 {
+  background-color: #ffffff;
+  color: #ff1493;
+  width: 90px;
+  height: 40px;
+}
+
+.button3 {
+  background-color: #ff69b4;
+  color: #ffffff;
+  width: 90px;
+  height: 40px;
+}
+
+.button4 {
+  background-color: #ffffff;
+  color: #ff69b4;
+  width: 90px;
+  height: 40px;
+}
+
+    </style>
+</head>
+
+<body>
+    <h1>
+        Calculate Your Numbers
+    </h1>
+    <button onclick=addition(); class=button1>For Addition</button> <br><br><br>
+    <button onclick=subtraction(); class=button2>For Subtraction</button> <br><br><br>
+    <button onclick=multiplicaton(); class=button3>For Multiplicaton</button> <br><br><br>
+    <button onclick=division(); class=button4> For Division</button> <br><br><br>
+    <script>
+        //For Additon 
+        function addition() {
+            let num1 = prompt("Type 1st Number");
+            let num2 = prompt("Type 2nd Number");
+            num1 = Number(num1);
+            num2 = Number(num2);
+            let num3 = num1 + num2
+
+            document.write("Addition of 1st and 2nd number is:" + " " + num3);
+        }
+        //For Subtraction 
+        function subtraction() {
+            let num1 = prompt("Type 1st Number");
+            let num2 = prompt("Type 2nd Number"); 
+             num1 = Number(num1);
+            num2 = Number(num2);
+            let num3 = num1 - num2
+
+            document.write("Subtraction of 1st and 2nd number is:" + " " + num3);
+        }
+
+
+        //For Multiply 
+        function multiplicaton() {
+            let num1 = prompt("Type 1st Number");
+            let num2 = prompt("Type 2nd Number");
+            num1 = Number(num1);
+            num2 = Number(num2);
+            let num3 = num1 * num2
+
+            document.write("Multiplicaton of 1st and 2nd number is:" + " " + num3);
+        }
+
+        //For Divide
+        function division() {
+            let num1 = prompt("Type 1st Number");
+            let num2 = prompt("Type 2nd Number");
+            num1 = Number(num1);
+            num2 = Number(num2);
+            let num3 = num1 / num2
+            document.write("Division of 1st and 2nd number is:" + " " + num3);
+        }
+
+
+
+
+
+    </script>
+</body>
+
+</html>
